@@ -27,5 +27,14 @@
             <artifactId>hibernate-entitymanager</artifactId>
             <version>5.6.0.Final</version> <!-- Use the same version as hibernate-core -->
         </dependency>
+
+        <!-- Database connector (e.g., MySQL) -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.23</version> <!-- Use the latest version available -->
+        </dependency>
+
+
     </dependencies>
 </project>
