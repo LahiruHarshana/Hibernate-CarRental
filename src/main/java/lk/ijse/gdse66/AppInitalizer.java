@@ -9,6 +9,8 @@ import lk.ijse.gdse66.configaration.SessionFactoryConfig;
 
 public class AppInitalizer extends Application {
     public void start(Stage stage) throws Exception {
+
+        SessionFactoryConfig.getInstance().getSession();
         Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/loginPageForm.fxml")));
         stage.setScene(scene);
         stage.setTitle("Car Rental System");
