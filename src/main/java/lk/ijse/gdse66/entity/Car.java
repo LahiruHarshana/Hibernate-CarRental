@@ -19,4 +19,6 @@ import javax.persistence.Table;
 public class Car {
     private String CarId;
     private String CarNumber;
+    private String CarBrand;
+
 }
