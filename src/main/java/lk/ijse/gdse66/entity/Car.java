@@ -21,8 +21,10 @@ public class Car {
     private String carNumber;
     private String carBrand;
     private String model;
-
     private Integer year;
+    private Double rate;
+
+    private Boolean isRentable;
 
 
 }
