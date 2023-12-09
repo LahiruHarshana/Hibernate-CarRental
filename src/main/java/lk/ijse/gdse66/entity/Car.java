@@ -26,6 +26,8 @@ public class Car {
 
     @Column(name = "car_number",length = 50)
     private String carNumber;
+
+    @Column(name = "car_brand",length = 50)
     private String carBrand;
     private String model;
     private Integer year;
