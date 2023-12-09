@@ -8,6 +8,6 @@ public class SessionFactoryConfig {
     private static SessionFactoryConfig factoryConfig;
     private final SessionFactory sessionFactory;
     private SessionFactoryConfig(){
-        Configuration
+        Configuration configuration = new Configuration().configure();
     }
 }
