@@ -41,6 +41,8 @@ public class Car {
 
     @Column(name = "isRentble",length = 50)
     private Boolean isRentable;
+
+    @Column(name = "deposit_amount",length = 50)
     private Double depositAmount;
 
 }
