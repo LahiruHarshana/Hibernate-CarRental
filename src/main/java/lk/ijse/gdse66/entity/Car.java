@@ -6,7 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
@@ -17,14 +19,16 @@ import javax.persistence.Table;
 @ToString
 
 public class Car {
+
+    @Id
+    @Column(name = "car_id",length = 50)
     private String carId;
     private String carNumber;
     private String carBrand;
     private String model;
     private Integer year;
     private Double rate;
-
     private Boolean isRentable;
-
+    private Double depositAmount;
 
 }
