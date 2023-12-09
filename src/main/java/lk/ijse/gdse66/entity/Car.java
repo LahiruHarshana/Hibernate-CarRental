@@ -23,6 +23,8 @@ public class Car {
     @Id
     @Column(name = "car_id",length = 50)
     private String carId;
+
+    @Column(name = "car_number",length = 50)
     private String carNumber;
     private String carBrand;
     private String model;
