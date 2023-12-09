@@ -1,5 +1,6 @@
 package lk.ijse.gdse66.configaration;
 
+import lk.ijse.gdse66.entity.Car;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -15,6 +16,7 @@ public class SessionFactoryConfig {
         Properties properties = new Properties();
         properties.load(ClassLoader.getSystemClassLoader().getResourceAsStream("hibernate.properties"));
 
-        configuration.addAnnotatedClass();
+        configuration.addAnnotatedClass(Car.class);
+        sessionFactory = configuration.setProperties(properties).buildSessionFactory();
     }
 }
