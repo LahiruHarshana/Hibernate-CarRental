@@ -29,6 +29,8 @@ public class Car {
 
     @Column(name = "car_brand",length = 50)
     private String carBrand;
+
+    @Column(name = "car_type",length = 50)
     private String model;
     private Integer year;
     private Double rate;
