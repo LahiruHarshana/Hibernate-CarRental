@@ -17,8 +17,12 @@ import javax.persistence.Table;
 @ToString
 
 public class Car {
-    private String CarId;
-    private String CarNumber;
-    private String CarBrand;
+    private String carId;
+    private String carNumber;
+    private String carBrand;
+    private String model;
+
+    private Integer year;
+
 
 }
