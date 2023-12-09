@@ -30,10 +30,16 @@ public class Car {
     @Column(name = "car_brand",length = 50)
     private String carBrand;
 
-    @Column(name = "car_type",length = 50)
+    @Column(name = "car_model",length = 50)
     private String model;
+
+    @Column(name = "year",length = 50)
     private Integer year;
+
+    @Column(name = "rate",length = 50)
     private Double rate;
+
+    @Column(name = "isRentble",length = 50)
     private Boolean isRentable;
     private Double depositAmount;
 
