@@ -41,7 +41,7 @@
                   <Font name="Arial Black" size="40.0" />
                </font>
             </Label>
-            <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="740.0" layoutY="449.0" onAction="#loginBtnOnAction" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+            <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="740.0" layoutY="449.0" onAction="#loginBtnOnAction" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #4E9C0B; -fx-background-radius: 10;" text="Login" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
