@@ -7,15 +7,21 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import lk.ijse.gdse66.configaration.SessionFactoryConfig;
 
-public class AppInitalizer extends Application {
-    public void start(Stage stage) throws Exception {
+public class Launcher extends Application {
+    public static void main(String[] args) {
+        launch(args);
+    }
 
-        SessionFactoryConfig.getInstance().getSession();
-        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/loginPageForm.fxml")));
-        stage.setScene(scene);
-        stage.setTitle("Car Rental System");
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent rootNode =  FXMLLoader.load(this.getClass().getResource("/view/loginPageForm.fxml"));
+
+        Scene scene = new Scene(rootNode);
+
+        stage.setTitle("Item Form");
         stage.centerOnScreen();
-        stage.setResizable(false);
+        stage.setScene(scene);
+
         stage.show();
     }
 }
