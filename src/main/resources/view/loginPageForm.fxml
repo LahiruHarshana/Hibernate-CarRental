@@ -21,11 +21,6 @@
                <image>
                   <Image url="@../images/carRentalLogin.jpg" />
                </image></ImageView>
-            <Label layoutX="180.0" layoutY="384.0" prefHeight="30.0" prefWidth="269.0" text="Management System!”" textFill="WHITE">
-               <font>
-                  <Font size="25.0" />
-               </font>
-            </Label>
             <TextField fx:id="userNameTxt" layoutX="699.0" layoutY="216.0" onAction="#userNameTxtOnAction" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
             <Label layoutX="701.0" layoutY="192.0" text="User Name" textFill="#888888">
                <font>
