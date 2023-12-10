@@ -66,11 +66,7 @@
             </JFXButton>
             <Button fx:id="pwViewBtn" layoutX="945.0" layoutY="319.0" mnemonicParsing="false" onAction="#pwViewBtnOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: tranceparent;" stylesheets="@../../../../../../dewmith-hostel/d24-hostel/d24_hostel/src/main/resources/styles/search.css">
                <graphic>
-                  <ImageView fx:id="viewImg" fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../dewmith-hostel/d24-hostel/d24_hostel/src/main/resources/assets/hide.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fx:id="viewImg" fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </Button>
          </children>
