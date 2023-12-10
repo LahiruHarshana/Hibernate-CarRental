@@ -15,7 +15,7 @@
 
 <AnchorPane fx:id="root" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse66.controller.LoginPageFormController">
    <children>
-      <ImageView fitHeight="832.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="832.0" fitWidth="1353.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/green.jpg" />
          </image></ImageView>
@@ -66,7 +66,11 @@
             </JFXButton>
             <Button fx:id="pwViewBtn" layoutX="945.0" layoutY="319.0" mnemonicParsing="false" onAction="#pwViewBtnOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: tranceparent;" stylesheets="@../../../../../../dewmith-hostel/d24-hostel/d24_hostel/src/main/resources/styles/search.css">
                <graphic>
-                  <ImageView fx:id="viewImg" fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="viewImg" fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/hide.png" />
+                     </image>
+                  </ImageView>
                </graphic>
             </Button>
          </children>
