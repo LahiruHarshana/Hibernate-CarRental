@@ -12,21 +12,24 @@ public class SessionFactoryConfig {
 
     private static SessionFactoryConfig factoryConfig;
     private final SessionFactory sessionFactory;
+
     private SessionFactoryConfig() throws IOException {
-        Configuration configuration = new Configuration().configure();
+        Configuration configuration = new Configuration();
+
         Properties properties = new Properties();
-        properties.load(ClassLoader.getSystemClassLoader().getResourceAsStream("hibernate.properties"));
+        properties.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("hibernate.properties"));
 
         configuration.addAnnotatedClass(Car.class);
-        sessionFactory = configuration.setProperties(properties).buildSessionFactory();
+        configuration.setProperties(properties);
+
+        sessionFactory = configuration.buildSessionFactory();
     }
 
     public static SessionFactoryConfig getInstance() throws IOException {
-
-        return (null== factoryConfig) ? factoryConfig = new SessionFactoryConfig() : factoryConfig;
+        return (null == factoryConfig) ? factoryConfig = new SessionFactoryConfig() : factoryConfig;
     }
 
-    public Session getSession(){
+    public Session getSession() {
         return sessionFactory.openSession();
     }
 }

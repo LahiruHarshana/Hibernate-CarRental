@@ -14,6 +14,8 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+
+        SessionFactoryConfig.getInstance().getSession();
         Parent rootNode =  FXMLLoader.load(this.getClass().getResource("/view/loginPageForm.fxml"));
 
         Scene scene = new Scene(rootNode);
