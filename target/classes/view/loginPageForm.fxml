@@ -15,15 +15,15 @@
 
 <AnchorPane fx:id="root" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse66.controller.LoginPageFormController">
    <children>
-      <ImageView fitHeight="881.0" fitWidth="1353.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="879.0" fitWidth="1353.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/green.jpg" />
+            <Image url="@../assets/green.jpg" />
          </image></ImageView>
-      <Pane layoutX="81.0" layoutY="85.0" prefHeight="661.0" prefWidth="1119.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: white;">
+      <Pane layoutX="124.0" layoutY="95.0" prefHeight="661.0" prefWidth="1119.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: white;">
          <children>
-            <ImageView fitHeight="662.0" fitWidth="587.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 30; -fx-border-radius: 30;">
+            <ImageView fitHeight="662.0" fitWidth="587.0" layoutX="-10.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 30; -fx-border-radius: 30;">
                <image>
-                  <Image url="@../images/carRentalLogin.jpg" />
+                  <Image url="@../assets/carRentalLogin.jpg" />
                </image></ImageView>
             <TextField fx:id="userNameTxt" layoutX="699.0" layoutY="216.0" onAction="#userNameTxtOnAction" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
             <Label layoutX="701.0" layoutY="192.0" text="User Name" textFill="#888888">
@@ -68,7 +68,7 @@
                <graphic>
                   <ImageView fx:id="viewImg" fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/hide.png" />
+                        <Image url="@../assets/hide.png" />
                      </image>
                   </ImageView>
                </graphic>

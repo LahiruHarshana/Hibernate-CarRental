@@ -19,9 +19,9 @@
          <image>
             <Image url="@../assets/green.jpg" />
          </image></ImageView>
-      <Pane layoutX="81.0" layoutY="85.0" prefHeight="661.0" prefWidth="1119.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: white;">
+      <Pane layoutX="124.0" layoutY="95.0" prefHeight="661.0" prefWidth="1119.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: white;">
          <children>
-            <ImageView fitHeight="662.0" fitWidth="587.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 30; -fx-border-radius: 30;">
+            <ImageView fitHeight="662.0" fitWidth="587.0" layoutX="-10.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 30; -fx-border-radius: 30;">
                <image>
                   <Image url="@../assets/carRentalLogin.jpg" />
                </image></ImageView>
